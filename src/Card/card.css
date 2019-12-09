@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: 'font/Montserrat-Regular.ttf'
+}
+
+.products {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat';
+}
+
+  .card {
+    padding: 10px;
+    width: 24%;
+    height: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: linear-gradient(transparent 20%, #111 70%);
+  }
+
+  .card:hover .img {
+    height: 100%;
+  }
+
+    p {
+      margin: 0;
+      padding: .5rem 0;
+    }
+
+    .name {
+      font-size: 25px;
+      color: #fff
+    }
+
+    .desc {
+      text-align: justify;
+      font-size: 12px;
+      color: #aaa
+    }
+
+    .price {
+      color: #fff;
+    }
+
+    .img {
+      display: block;
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: .5s;
+    }
+
+    .price::after {
+      content: ' $';
+    }
+    
+    .btn {
+      margin-top: 1rem;
+      padding: .5rem;
+      border: none;
+      background: skyblue;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
